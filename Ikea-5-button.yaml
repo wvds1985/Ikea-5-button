@@ -36,9 +36,10 @@ blueprint:
       name: Light
       description: Select the light entity you wish to control.
       selector:
-        target:
-          entity:
-            domain: light
+        entity:
+          multiple: true
+          filter:
+            - domain: light
     speed:
       name: Speed
       description: The speed in which to update the light when the button is held.
